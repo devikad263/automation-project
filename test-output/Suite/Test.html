@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 22 15:16:28 IST 2026</td>
+<td>Started on:</td><td>Wed Sep 23 12:32:31 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28803 ms)</td>
+<tr><td>Total time:</td><td>24 seconds (24932 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,133 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='test.logintest.loginTest()'><b>loginTest</b><br>Test class: test.logintest<br>Parameters: Ammu, 123</td>
+<td><div><pre>java.lang.AssertionError: Login failed for :Ammu
+	at test.logintest.loginTest(logintest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace542598487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace542598487'><pre>java.lang.AssertionError: Login failed for :Ammu
+	at org.testng.Assert.fail(Assert.java:111)
+	at test.logintest.loginTest(logintest.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>test.logintest@2362f559</td></tr>
+<tr>
+<td title='test.finishtest.finishOrderTest()'><b>finishOrderTest</b><br>Test class: test.finishtest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;shopping_cart_container&apos;]/a&quot;}
+  (Session info: chrome=153.0.8010.53)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.49.0&apos;, revision: &apos;bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ebd83a8bec612d40f611942c6ee87e7, findElement {using=xpath, value=//*[@id=&apos;shopping_cart_container&apos;]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.53, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56977}, goog:processID: 4516, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56977/devtoo..., se:cdpVersion: 153.0.8010.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ebd83a8bec612d40f611942c6ee87e7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:417)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:411)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at page.checkoutpage.checkout(checkoutpage.java:24)
+	at test.finishtest.finishOrderTest(finishtest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1322559460", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1322559460'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;shopping_cart_container&apos;]/a&quot;}
+  (Session info: chrome=153.0.8010.53)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.49.0&apos;, revision: &apos;bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ebd83a8bec612d40f611942c6ee87e7, findElement {using=xpath, value=//*[@id=&apos;shopping_cart_container&apos;]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.53, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56977}, goog:processID: 4516, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56977/devtoo..., se:cdpVersion: 153.0.8010.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ebd83a8bec612d40f611942c6ee87e7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:417)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:411)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at page.checkoutpage.checkout(checkoutpage.java:24)
+	at test.finishtest.finishOrderTest(finishtest.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>test.finishtest@7770f470</td></tr>
+<tr>
 <td title='test.logintest.loginTest()'><b>loginTest</b><br>Test class: test.logintest<br>Parameters: Anju, 789</td>
 <td><div><pre>java.lang.AssertionError: Login failed for :Anju
 	at test.logintest.loginTest(logintest.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace110197684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace110197684'><pre>java.lang.AssertionError: Login failed for :Anju
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace344080246", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace344080246'><pre>java.lang.AssertionError: Login failed for :Anju
 	at org.testng.Assert.fail(Assert.java:111)
 	at test.logintest.loginTest(logintest.java:48)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -118,46 +239,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: Login failed for :Arya
 	at test.logintest.loginTest(logintest.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace162144258", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace162144258'><pre>java.lang.AssertionError: Login failed for :Arya
-	at org.testng.Assert.fail(Assert.java:111)
-	at test.logintest.loginTest(logintest.java:48)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>test.logintest@2362f559</td></tr>
-<tr>
-<td title='test.logintest.loginTest()'><b>loginTest</b><br>Test class: test.logintest<br>Parameters: Ammu, 123</td>
-<td><div><pre>java.lang.AssertionError: Login failed for :Ammu
-	at test.logintest.loginTest(logintest.java:48)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1464652578", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1464652578'><pre>java.lang.AssertionError: Login failed for :Ammu
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2025928493", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2025928493'><pre>java.lang.AssertionError: Login failed for :Arya
 	at org.testng.Assert.fail(Assert.java:111)
 	at test.logintest.loginTest(logintest.java:48)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -199,32 +282,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.producttest.logo()'><b>logo</b><br>Test class: test.producttest</td>
-<td></td>
-<td>0</td>
-<td>test.producttest@247bddad</td></tr>
-<tr>
 <td title='test.checkouttest.checkoutTest()'><b>checkoutTest</b><br>Test class: test.checkouttest</td>
 <td></td>
 <td>1</td>
 <td>test.checkouttest@d35dea7</td></tr>
 <tr>
-<td title='test.finishtest.finishOrderTest()'><b>finishOrderTest</b><br>Test class: test.finishtest</td>
-<td></td>
-<td>1</td>
-<td>test.finishtest@7770f470</td></tr>
-<tr>
-<td title='test.logintest.logoverification()'><b>logoverification</b><br>Test class: test.logintest</td>
-<td></td>
-<td>0</td>
-<td>test.logintest@2362f559</td></tr>
-<tr>
 <td title='test.logintest.buttontext()'><b>buttontext</b><br>Test class: test.logintest</td>
-<td></td>
-<td>0</td>
-<td>test.logintest@2362f559</td></tr>
-<tr>
-<td title='test.logintest.loginTest()'><b>loginTest</b><br>Test class: test.logintest<br>Parameters: standard_user, secret_sauce</td>
 <td></td>
 <td>0</td>
 <td>test.logintest@2362f559</td></tr>
@@ -233,6 +296,21 @@ function toggleAllBoxes() {
 <td></td>
 <td>18</td>
 <td>test.producttest@247bddad</td></tr>
+<tr>
+<td title='test.producttest.logo()'><b>logo</b><br>Test class: test.producttest</td>
+<td></td>
+<td>0</td>
+<td>test.producttest@247bddad</td></tr>
+<tr>
+<td title='test.logintest.loginTest()'><b>loginTest</b><br>Test class: test.logintest<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>0</td>
+<td>test.logintest@2362f559</td></tr>
+<tr>
+<td title='test.logintest.logoverification()'><b>logoverification</b><br>Test class: test.logintest</td>
+<td></td>
+<td>0</td>
+<td>test.logintest@2362f559</td></tr>
 </table><p>
 </body>
 </html>

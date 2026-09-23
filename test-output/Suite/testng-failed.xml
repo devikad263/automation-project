@@ -10,6 +10,13 @@
           <include name="browser_launch"/>
         </methods>
       </class> <!-- test.logintest -->
+      <class name="test.finishtest">
+        <methods>
+          <include name="finishOrderTest"/>
+          <include name="teardown"/>
+          <include name="browser_launch"/>
+        </methods>
+      </class> <!-- test.finishtest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

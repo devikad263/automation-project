@@ -9,24 +9,50 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">28,803</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">24,932</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">test.logintest</td><td><a href="#m0">loginTest</a></td><td rowspan="3">1790070394439</td><td rowspan="3">255</td></tr><tr class="failedeven"><td><a href="#m1">loginTest</a></td></tr><tr class="failedeven"><td><a href="#m2">loginTest</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.checkouttest</td><td><a href="#m3">checkoutTest</a></td><td rowspan="1">1790070414134</td><td rowspan="1">1355</td></tr><tr class="passedodd"><td rowspan="1">test.finishtest</td><td><a href="#m4">finishOrderTest</a></td><td rowspan="1">1790070415492</td><td rowspan="1">1705</td></tr><tr class="passedeven"><td rowspan="3">test.logintest</td><td><a href="#m5">buttontext</a></td><td rowspan="1">1790070395024</td><td rowspan="1">61</td></tr><tr class="passedeven"><td><a href="#m6">loginTest</a></td><td rowspan="1">1790070394694</td><td rowspan="1">256</td></tr><tr class="passedeven"><td><a href="#m7">logoverification</a></td><td rowspan="1">1790070394953</td><td rowspan="1">68</td></tr><tr class="passedodd"><td rowspan="2">test.producttest</td><td><a href="#m8">additemstocart</a></td><td rowspan="1">1790070395317</td><td rowspan="1">18817</td></tr><tr class="passedodd"><td><a href="#m9">logo</a></td><td rowspan="1">1790070395085</td><td rowspan="1">232</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.finishtest</td><td><a href="#m0">finishOrderTest</a></td><td rowspan="1">1790146976349</td><td rowspan="1">156</td></tr><tr class="failedodd"><td rowspan="3">test.logintest</td><td><a href="#m1">loginTest</a></td><td rowspan="3">1790146954837</td><td rowspan="3">356</td></tr><tr class="failedodd"><td><a href="#m2">loginTest</a></td></tr><tr class="failedodd"><td><a href="#m3">loginTest</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.checkouttest</td><td><a href="#m4">checkoutTest</a></td><td rowspan="1">1790146975031</td><td rowspan="1">1316</td></tr><tr class="passedodd"><td rowspan="3">test.logintest</td><td><a href="#m5">buttontext</a></td><td rowspan="1">1790146955974</td><td rowspan="1">51</td></tr><tr class="passedodd"><td><a href="#m6">loginTest</a></td><td rowspan="1">1790146955690</td><td rowspan="1">212</td></tr><tr class="passedodd"><td><a href="#m7">logoverification</a></td><td rowspan="1">1790146955908</td><td rowspan="1">66</td></tr><tr class="passedeven"><td rowspan="2">test.producttest</td><td><a href="#m8">additemstocart</a></td><td rowspan="1">1790146956237</td><td rowspan="1">18790</td></tr><tr class="passedeven"><td><a href="#m9">logo</a></td><td rowspan="1">1790146956025</td><td rowspan="1">208</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">test.logintest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Anju</td><td>789</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for :Anju
+<h2>Test</h2><h3 id="m0">test.finishtest#finishOrderTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;shopping_cart_container&apos;]/a&quot;}
+  (Session info: chrome=153.0.8010.53)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.49.0&apos;, revision: &apos;bedb24f bedb24f6f703876e7e4c5d506f0d697eb358c720&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ebd83a8bec612d40f611942c6ee87e7, findElement {using=xpath, value=//*[@id=&apos;shopping_cart_container&apos;]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.53, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56977}, goog:processID: 4516, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56977/devtoo..., se:cdpVersion: 153.0.8010.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ebd83a8bec612d40f611942c6ee87e7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:417)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:411)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at page.checkoutpage.checkout(checkoutpage.java:24)
+	at test.finishtest.finishOrderTest(finishtest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test.logintest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Ammu</td><td>123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for :Ammu
 	at test.logintest.loginTest(logintest.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">test.logintest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Arya</td><td>456</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for :Arya
+<h3 id="m2">test.logintest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Anju</td><td>789</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for :Anju
 	at test.logintest.loginTest(logintest.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">test.logintest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Ammu</td><td>123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for :Ammu
+<h3 id="m3">test.logintest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Arya</td><td>456</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Login failed for :Arya
 	at test.logintest.loginTest(logintest.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">test.checkouttest#checkoutTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">test.finishtest#finishOrderTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">test.checkouttest#checkoutTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m5">test.logintest#buttontext</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m6">test.logintest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>standard_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m7">test.logintest#logoverification</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
